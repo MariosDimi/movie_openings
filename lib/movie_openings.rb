@@ -1,4 +1,4 @@
-require "movie_openings/version"
+require_relative "./movie_openings/version"
 
 module MovieOpenings
   class Error < StandardError; end
