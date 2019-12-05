@@ -1,10 +1,7 @@
 MOVIE OPENINGS
 
 # MovieOpenings
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/movie_openings`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem will give the user to choose between two movies that are happening on this day, also it will give the user an option to choose if he wants to get more information about those movies.
 
 ## Installation
 
