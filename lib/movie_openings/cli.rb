@@ -20,14 +20,11 @@ class MovieOpenings::CLI
     input = nill
     while input != "exit"
     puts "Please choose if you want to know more information about those movies, or see them as list or simpy exit the menu."
-    
-      input = gets.strip.downcase
-      case input
-      when "PLAYMOBIL"
-        puts "More information about PLAYMOBIL..."
-      when "THE ISLAND"
-        puts "More information about THE ISLAND..."
-      when "list"
+    input = gets.strip.downcase
+      
+      if input.to_i > 0
+        puts @movies[input.to_i-1]
+      elsif input =="list"
         list_of_movies
       else
         puts "This option is not available, please try again."
