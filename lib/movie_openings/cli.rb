@@ -14,6 +14,9 @@ class MovieOpenings::CLI
       2.THE ISLAND - 2019
     DOC
     @movies = MovieOpenings::Movies.today
+    @movies.each.with_index(1) do |movie, i|
+      puts "#{i}. #{movie.name} - #{movie.year} - #{movie.playing}"
+    end
   end
   
   def movie_menu
@@ -23,6 +26,7 @@ class MovieOpenings::CLI
     input = gets.strip.downcase
       
       if input.to_i > 0
+        
         puts @movies[input.to_i-1]
       elsif input =="list"
         list_of_movies
