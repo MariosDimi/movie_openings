@@ -1,6 +1,7 @@
 class MovieOpenings::CLI 
   
   def call 
+    puts "Today's movie openings are: "
     list_of_movies
     menu
     closing
